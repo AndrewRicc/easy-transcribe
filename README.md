@@ -35,7 +35,9 @@ This project is meant to work using `video_to_audio.py` -> `audio_to_text.py` in
 ### Video to Audio
 This module uses FFMPEG to convert `{".mp4", ".mkv", ".mov", ".avi"}` these video extensions into `.mp3`.<br>
 Using `-b` or `--bulk` argument it will convert all videos in the `video` directory.
+
 ---
+
 If you don't use `-b` or `--bulk` argument you have to specify the video file path to convert.<br>
 In all cases you have to specify also the name `prefix` and the initial `index`:
 - prefix is the name prefix .mp3 files will have;
@@ -45,7 +47,9 @@ All video converted will be moved to `video_done` directory.
 # Audio to Text
 This module uses `openai-whisper` to transcribe audio to text.<br>
 Using `-b` or `--bulk` argument it will convert all audios in the `audio` directory, `.txt` filename will be the same as the `.mp3` filename.
+
 ---
+
 If you don't use `-b` or `--bulk` argument you have to specify the audio file path to transcribe.<br>
 All audio transcribed will be moved to `audio_done` directory.<br>
 This module supports cuda. Try the following snippet to see if cuda is available on your device.
