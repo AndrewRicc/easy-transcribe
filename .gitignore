@@ -1,0 +1,8 @@
+.env
+.venv
+__pycache__
+audio/*
+audio_done/*
+text/*
+video/*
+video_done/*
