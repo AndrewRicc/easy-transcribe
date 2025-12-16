@@ -12,6 +12,7 @@ Transcribe any audio to text and any video to audio
 
 ### for CUDA support (optional)
 `python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130`
+
 ---
 
 `python -m pip install openai-whisper`
