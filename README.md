@@ -2,20 +2,30 @@
 Transcribe any audio to text and any video to audio
 
 ## venv setup
-`python -m venv venv`
+```bash
+python -m venv venv
+```
 
 ### Windows
-`venv/Scripts/Activate.ps1`
+```powershell
+venv/Scripts/Activate.ps1
+```
 
 ### Bash
-`source venv/bin/activate`
+```bash
+source venv/bin/activate
+```
 
 ### for CUDA support (optional)
-`python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130`
+```bash
+python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
+```
 
 ---
 
-`python -m pip install openai-whisper`
+```bash
+python -m pip install openai-whisper
+```
 
 Write your `.env` file
 
