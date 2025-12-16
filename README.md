@@ -9,8 +9,12 @@ Transcribe any audio to text and any video to audio
 
 ### Bash
 `source venv/bin/activate`
+
+### for CUDA support (optional)
+`python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130`
 ---
-`python -m pip install -r requirements.txt`
+
+`python -m pip install openai-whisper`
 
 Write your `.env` file
 
@@ -32,4 +36,9 @@ This module uses `openai-whisper` to transcribe audio to text.<br>
 Using `-b` or `--bulk` argument it will convert all audios in the `audio` directory, `.txt` filename will be the same as the `.mp3` filename.
 ---
 If you don't use `-b` or `--bulk` argument you have to specify the audio file path to transcribe.<br>
-All audio transcribed will be moved to `audio_done` directory.
+All audio transcribed will be moved to `audio_done` directory.<br>
+This module supports cuda. Try the following snippet to see if cuda is available on your device.
+```python
+import torch
+print(torch.cuda.is_available())
+```
